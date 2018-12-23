@@ -1,5 +1,6 @@
 <?php 
  require_once('./assets/classes/config.php');
+ require_once('./functions.php');
 ?>
 <!DOCTYPE html>
 <!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->

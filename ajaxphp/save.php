@@ -37,15 +37,20 @@
     <!-- Content -->
 
     <div class="container">
-        <form>
+        <form class="ajax" action="../home.php" method="post">
             <div class="form-group">
                 <label for="email">Email address</label>
+                <!-- -->
+                <input type="hidden" name="fname" value="<?php echo $_POST['fname']; ?>">
+                <input type="hidden" name="lname" value="<?php echo $_POST['lname']; ?>">
+                <!-- -->
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
                     placeholder="Enter email" name="email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        <button class="btn btn-danger">Go Back</button>
     </div> <!-- End of container -->
 
     <!-- End of the content -->
